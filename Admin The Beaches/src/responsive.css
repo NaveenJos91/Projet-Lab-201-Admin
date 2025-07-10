@@ -1,0 +1,28 @@
+@media (max-width: 640px) {
+  
+  /* Passage en colonne pour les éléments de la liste */
+  ul li {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem;
+  }
+
+  /* Marge sous le contenu principal */
+  ul li > div:first-child {
+    margin-bottom: 0.5rem !important;
+  }
+
+  /* Suppression de la marge gauche sur les boutons et affichage en flex */
+  ul li > div:last-child {
+    margin-left: 0 !important;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  /* Les boutons prennent la largeur disponible */
+  ul li > div:last-child button {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+}
